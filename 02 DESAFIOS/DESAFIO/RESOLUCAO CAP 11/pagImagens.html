@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+    <title>Imagens flexíveis</title>
+    <style>
+        body{
+            background-color: darkkhaki;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Imagem flexível
+    </h1>
+    <p>
+        Você está vendo a imagem completa? experimente alterar o tamanho da sua tela para ver o que acontece &#x1f631;
+    </p>
+    <picture>
+        <source media="(max-width:500px)" srcset="images/paisagem-p.png" type="image/png">
+        <source media="(max-width:800px)" srcset="images/paisagem-m.png" type="image/png">
+        <img src="images/paisagem-g.png" alt="paisagem relaxante">
+    </picture>
+    <p>
+        <a href="index.html"><img src="images/voltar.png" alt="voltar"></a>
+    </p>
+</body>
+</html>

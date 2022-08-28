@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+    <style>
+        div{
+            background-color: #9bfbcb;
+            text-align: center;
+            font-weight: bold;
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            display: inline-block;
+        }
+        
+        div:hover{
+            background-color: #ffeb10;
+        }
+
+        div > p{
+            color: #ff0000;
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+        }
+    </style>    
+</head>
+<body>
+    <p><a href="index.html">Voltar</a></p>
+        <div>
+            01
+            <p>HOVER</p>
+        </div>
+        <div>
+            02
+            <p>HOVER</p>
+        </div>
+        <div>
+            03
+            <p>HOVER</p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <title>Imagens dinâmicas</title>
+    <style>
+        body{
+            background-color: rgb(255, 218, 173);
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>
+        Abra o navegador em celulares, tablets ou computadortes e a imagem se adaptada dinamicamente ao tamanhoda tela.
+    </p>
+    <p>
+        para isso basta usar a tag &lt; PICTURE &gt;
+    </p>
+    <picture>
+        <source media="(max-width:750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="imagens flexíveis">
+    </picture>
+    <p>
+            <code>
+                &lt;picture&gt;
+                    &lt;source media="(max-width:750px)" srcset="images/foto-p.png" type="image/png">
+                    &lt;source media="(max-width:1050px)" srcset="images/foto-m.png" type="image/png">
+                    &lt;img src="images/foto-g.png" alt="imagens flexíveis">
+                &lt;picture&gt;
+            </code>
+    </p>
+
+    <h1>Inserindo arquivos de áudio</h1>
+    <p>
+        <em>Inserindo áudio com a tag &lt; AUDIO src=" " controls autoplay &gt;</em>
+    </p>
+    <p>
+        <audio src="media/audio_1.m4a" controls autoplay></audio>
+    </p>
+    <p>
+            <code>
+                &lt;audio src="media/audio_1.m4a" controls autoplay></audio>
+            </code>
+    </p>
+    <p>
+        <em>Inserindo com a tag &lt; AUDIO &gt; &lt; SOURCE &gt; </em>
+    </p>
+    <p>
+        <audio preload="metadata" autoplay controls loop>
+            <source src="media/audio_1.m4a" type="audio/mpeg">
+        </audio>
+    </p>
+    <p>
+        <code>
+            &lt;audio preload="metadata" autoplay controls loop>
+            <source src="media/audio_1.m4a" type="audio/mpeg">
+        </code>
+</p>
+<h1>Inserindo arquivos de vídeos</h1>
+<p>
+    Inserindo vídeos hospedados localmente.
+</p>
+<p>
+    <em>Inserindo áudio com a tag &lt; VIDEO src=" " controls poster &gt;</em>
+</p>
+<p>
+    <video src="media/video_1.mov" poster="images/thumb.png" width="300px" controls></video>
+</p>
+<p>
+    <code>
+            &lt;video src="media/video_1.mov" poster="images/thumb.png" width="300px" controls>
+    </code>
+</p>
+<p>
+    <em>Inserindo com a tag &lt; VIDEO &gt; &lt; SOURCE &gt; </em>
+</p>
+<p>
+    <video width="300px" poster="images/thumb.png" controls>
+        <source src="media/video_1.mov" type="video/mp4">
+    </video>
+</p>
+<p>
+    <code>
+            &lt;video width="300px" poster="images/thumb.png" controls>
+            &lt;source src="media/video_1.mov" type="video/mp4">
+    </code>
+</p>
+<p><strong><em>ATENÇÃO, VÍDEOS HOSPEDADOS LOCALMENTE CONSOMEM GRANDE LARGURA DE BANDA</em></strong></p>
+<h1>Inserindo vídeos do Youtbe com a tag &lt; iframe &gt;</h1>
+<p>
+    <iframe width="300" height="215" src="https://www.youtube.com/embed/BwWWS51cIlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+</body>
+</html>

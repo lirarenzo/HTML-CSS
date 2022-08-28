@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <title>Links externos</title>
+</head>
+<body>
+    <h1>Usando <em>links</em> externos</h1>
+    <p>
+        <!--tag "A HREF" sempre com as tag TARGET e REL-->
+        Você pode acessar meu repositório no Github clicando <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">aqui &#x1f603</a>
+    </p>
+    <p>
+        Usar sempre as tags <strong>TARGET</strong> <em>(<markup style="background-color:yellow">"-blank"</markup>)</em> e <strong>REL</strong> <em>(<markup style="background-color:lightgreen">"external"</markup>)</em>.
+    </p>
+    <p>
+        Esta é a primeira página do <em>site</em>. Se você quiser ir para a segunda página, é só clicar <a href="pag2.html" rel="next">aqui</a>.
+    </p>
+    <p>
+        Esse é o <a href="noticias/noticias.html" target="_self">link</a> para a terceira página.
+    </p>
+    <h1>Links para download</h1>
+    <p>
+        <ul>
+            <li>
+                Lembrar de SEMPRE usar os parâmetros <mark>DOWNLOAD</mark>="nome do arquivo"e <mark style="background-color:lightgreen">TYPE</mark>="application.pdf" (para o navegador mandar fazer o DOWNLOAD do arquivo ao invés de abrir no navegador)
+            </li>
+            <li>
+                <!--usar os parâmetros DOWNLOAD="nome do arquivo"e TYPE="application.pdf"-->
+                <a href="files/Mementos Rádios.pdf" target="_blank" rel="external" download="Mementos Rádios.pdf" type="application.pdf">Cartilha exemplo 1</a>;
+            </li>
+            <li>
+                <a href="files/Mementos Rádios.pdf" target="_blank" rel="external">Cartilha exemplo 2</a>.
+            </li>
+        </ul>
+    </p>
+</body>
+</html>

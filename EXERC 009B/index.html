@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+        <h2>Listas ordenadas</h2>
+           <ol type="1" start="1"> <!--1, a, i-->
+                <li>Acordar</li>
+                <li>Escovar o dente</li>
+                <li>Tomar café</li>
+                <li>Ir para o trabalho</li>
+           </ol>
+        <h2>Listas não ordenadas</h2>
+           <ul type="disc"> <!--square, circle, disc-->
+                <li>Comprar arroz;</li>
+                <li>Comprar feijão;</li>
+                <li>Comprar frutas;</li>
+           </ul>
+        <h2>Juntando listas</h2>
+           <ol type="i">
+                <li>Acordar</li>
+                    <ul>
+                        <li>abrir o olho</li>
+                        <li>sair da cama</li>
+                        <li>levantar</li>
+                    </ul>
+                <li>Escovar o dente</li>
+                    <ol type="a" start="3"> <!--O start é sempre um parâmetro numérico-->
+                        <li>passar a pasta de dente</li>
+                        <li>abrir a boca</li>
+                        <li>lavar o dente</li>
+                    </ol>
+                <li>Tomar café</li>
+                <li>Ir para o trabalho</li>
+           </ol>
+        <h2>Lista de definições</h2>
+           <p>Usnado o DT (Definition Term) e DD (Definition Description)</p>
+           <p>
+               <dl>
+                    <dt>HTML</dt>
+                    <dd>hyper text markup language</dd>
+                    <dt>CSS</dt>
+                    <dd>cascade style sheets</dd>
+                    <dt>JavaScript</dt>
+                    <dd>Linguagem de programação orientada a objetos (OO)</dd>
+               </dl>
+           </p>
+</body>
+</html>
