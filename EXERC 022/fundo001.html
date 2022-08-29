@@ -7,42 +7,43 @@
     <title>Imagens de fundo</title>
     <link rel="shortcut icon" href="icons/favicon.png" type="image/x-icon">
     <style>
-        *{
-            margin: 2px;
-            padding: 2px;
-        }
         body{
-            background-image: url('images/wallpaper001.jpg');
+            height: 100vh;
+            /*background-color: #000;
+            background-image: url('images/wallpaper003.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;*/
+
+            /*
+            Shorthand background 
+            color > image > position > repeat > attachment
+            */
+
+            background:  #000  url('images/wallpaper003.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
-        .quadrado{
-            display: inline-block;
-            background-color: #808080;
-            border: 1px solid #000;
-            border-radius: 10px;
-            width: 200px;
-            height: 200px;
-        }
-        #q1{
-            background-color: #a52a2a;
-        }
-        #q2{
-            background-image: linear-gradient(to bottom, #ffff00, #ff0000 75%);
-        }
-        #q3{
-            background-image: url('images/pattern001.png');
+        main{
+            background-color: #fff;
+            color: #000;
+            padding: 5px;
+            margin: auto;
+            max-width: 400px;
+            border: 5px solid #;
+            border-radius: 5px;
         }
 
     </style>
 </head>
 <body>
-    <div class="quadrado" id="q1">
-
-    </div>
-    <div class="quadrado" id="q2">
-
-    </div>
-    <div class="quadrado" id="q3">
-
-    </div>
+    <main>
+        <div class="bloco" id="q1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi illo deleniti consequuntur porro doloremque alias explicabo eum pariatur blanditiis accusantium, expedita, quia perferendis cupiditate minima fugit quibusdam iusto, ducimus dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae harum autem eveniet eligendi molestias quaerat. Ullam a porro esse iusto. Quisquam, vitae veritatis ducimus iusto omnis aut et cupiditate magnam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore rem temporibus repudiandae pariatur assumenda. Eius assumenda alias consequatur molestiae sequi dolorem quae nemo ducimus eos maiores! Animi vel eum quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio corrupti sed praesentium eos reiciendis voluptates, ex, neque doloribus laudantium quam voluptatum. Totam vel atque animi quis accusantium aut ullam quidem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores blanditiis in, ullam culpa, eum magni reiciendis nam sit cupiditate ea pariatur ut totam repellendus corporis inventore quam minima sed obcaecati.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ullam earum facilis? Tenetur, labore debitis impedit quam praesentium dicta! Nisi ipsam quam, nobis similique tempora unde necessitatibus provident officiis saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, molestias nesciunt? Iste consectetur, commodi, voluptates alias consequuntur error debitis harum praesentium sit veniam sunt culpa, suscipit vitae animi quis porro!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod perferendis quam, nulla illo ducimus delectus dolorem harum fugiat reprehenderit odio praesentium asperiores tempora ex obcaecati iste excepturi rerum at quos?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt corporis dolorem ducimus, expedita reiciendis porro. Dicta numquam iusto inventore ut sit, eum nihil laudantium sapiente. Hic ex deserunt accusamus dignissimos! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque, exercitationem architecto est dignissimos numquam suscipit omnis ratione voluptate eligendi laboriosam temporibus ex quod nostrum ipsa impedit pariatur molestiae libero.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod perferendis quam, nulla illo ducimus delectus dolorem harum fugiat reprehenderit odio praesentium asperiores tempora ex obcaecati iste excepturi rerum at quos?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt corporis dolorem ducimus, expedita reiciendis porro. Dicta numquam iusto inventore ut sit, eum nihil laudantium sapiente. Hic ex deserunt accusamus dignissimos! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque, exercitationem architecto est dignissimos numquam suscipit omnis ratione voluptate eligendi laboriosam temporibus ex quod nostrum ipsa impedit pariatur molestiae libero.</p>
+        </div>
+    </main>
 </body>
 </html>
