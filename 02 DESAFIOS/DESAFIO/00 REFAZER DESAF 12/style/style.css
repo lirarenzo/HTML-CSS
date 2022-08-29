@@ -77,7 +77,8 @@ main section{
 }
 main h1{
     font-family: var(--fonteAndroid);
-    font-size: 1.8em;
+    font-size: 1.6em;
+    text-align: left;
     color: var(--corVerde2);
     font-weight: bolder;
     margin-bottom: 25px;
