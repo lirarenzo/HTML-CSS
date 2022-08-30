@@ -2,37 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
-body a{
+html, body{
+    min-height: 100vh;
+}
+a{
     color: white;
     font-weight: bolder;
     text-decoration: none;
 }
-body a:hover{
+a:hover{
     text-decoration: underline;
 }
 header{
     background-color: black;
     color: white;
-    height: 25vh;
-    position: relative;
-}
-header > section{
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
+
 }
 header h1{
     font-family: 'Passion One', cursive;
-    padding: 5px;
+    padding-top: 50px;
     font-size: 2.7em;
     width: 90vw;
+    font-variant: small-caps;
 }
 header p{
+    padding-bottom: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
 }
@@ -43,23 +41,22 @@ main{
     font-weight: 600;
     line-height: 2em;
     text-align: left;
-    padding: 0px 50px;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+}
+section.normal{
 
 }
-main > section > article{
-    margin-top: 10vh;
-    margin-bottom: 20vh;
-}
-#containerVs2{
-    background-image: url('../images/background001.jpg');
-    margin: -50px;
-    width: 100vw;
-    background-size: cover;
-    background-position: fixed;
-}
-#vrs2{
+section.imagem{
+    background-color: #313131cb;
     color: white;
-    padding: 0px 50px;
+}
+section.imagem >p{
+    width: 250px;
+    background-color: #0000007c;
 }
 footer{
     padding: 10px;
