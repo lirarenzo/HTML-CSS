@@ -20,7 +20,6 @@ header{
     background-color: black;
     color: white;
     text-align: center;
-
 }
 header h1{
     font-family: 'Passion One', cursive;
@@ -48,15 +47,30 @@ section{
     padding-left: 30px;
 }
 section.normal{
-
+    background-color: white;
+    color: black;
+}
+section.normal>p{
+    padding-bottom: 50px;
 }
 section.imagem{
     background-color: #313131cb;
     color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    box-shadow: inset 0px 0px 20px 5px #000;
 }
 section.imagem >p{
-    width: 250px;
-    background-color: #0000007c;
+    display: inline-block;
+    padding: 10px;
+    background-color: #0000002b;
+}
+section#img1{
+    background-image: url('../images/background001.jpg');
+}
+section#img2{
+    background-image: url('../images/background002.jpg');
 }
 footer{
     padding: 10px;
