@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
-        table{
+        #tbl1{
             border-collapse: collapse;
+            position: relative;
+        }
+        #tbl1  thead   {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+
         }
         th{
             border: 1px solid black;
@@ -15,9 +22,8 @@
             width: 70px;
             height: 25px;
             text-align: center;
-            background-color: rgb(4, 167, 64);
         }
-        tbody>tr:nth-child(2n){ 
+        #tbl1 tbody>tr:nth-child(2n){ 
             /*Efeitos nas linhas - pode usar odd e even*/
             background-color: rgba(165, 42, 42, 0.475);
         }
@@ -28,6 +34,25 @@
             height: 100px;
             text-align: center;
             vertical-align: top; /*Alinhamento vertical da tabela*/
+        }
+        /**********/
+        #tbl2{
+            border-collapse: collapse;
+            position: relative;
+        }
+        .tbl2__formatacao {
+            background-color: #fff;
+            color: #000;
+            vertical-align: middle;
+        }
+        .tbl2__formatacao td{
+            vertical-align: middle; 
+        }
+        #tbl2 #tbl2__formatacao--header{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+            border: 1px solid#000;
         }
     </style>
 </head>
@@ -53,8 +78,7 @@
                     <tr> 
                         <td> <th>
     -->
-    <table>
-        <caption>Titulo da tabela com tag caption</caption>
+    <table id="tbl1">
         <thead>
             <tr>
                 <th scope="col">A</th>
@@ -98,7 +122,77 @@
             </tr>
         </tfoot>
     </table>
-    
+    <br>
+    <table id="tbl2">
+        <thead class="tbl2__formatacao" id="tbl2__formatacao--header">
+            <tr>
+                <th scope="col">Cabeçalho</th>
+                <th scope="col">Cabeçalho</th>
+                <th scope="col">Cabeçalho</th>
+                <th scope="col">Cabeçalho</th>
+            </tr>
+        </thead>
+        <tbody class="tbl2__formatacao">
+            <tr>
+                <td rowspan="4">a</td>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+            <tr>
+                <td>b</td>
+                <td colspan="2">b</td>
+            </tr>
+            <tr>
+                <td>c</td>
+                <td>c</td>
+                <td rowspan="2">c</td>
+            </tr>
+            <tr>
+                <td>d</td>
+                <td>d</td>
+            </tr>
+        </tbody>
+        <tfoot class="tbl2__formatacao" id="tbl2_formatacao--footer">
+            <tr>
+                <th scope="row">Rodapé</th>
+                <th scope="row">Rodapé</th>
+                <th scope="row">Rodapé</th>
+                <th scope="row">Rodapé</th>
+            </tr>
+        </tfoot>
+    </table>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quod aliquam fugiat officia quis dolorum dolorem cupiditate dolore? Aperiam sunt officiis quod, sequi praesentium quae reiciendis nihil. Nulla, veniam aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corporis ab neque id eveniet consequatur dolor. Velit delectus porro, et, rem eum id debitis eius est, vitae culpa enim facere!
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quod aliquam fugiat officia quis dolorum dolorem cupiditate dolore? Aperiam sunt officiis quod, sequi praesentium quae reiciendis nihil. Nulla, veniam aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corporis ab neque id eveniet consequatur dolor. Velit delectus porro, et, rem eum id debitis eius est, vitae culpa enim facere!
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quod aliquam fugiat officia quis dolorum dolorem cupiditate dolore? Aperiam sunt officiis quod, sequi praesentium quae reiciendis nihil. Nulla, veniam aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corporis ab neque id eveniet consequatur dolor. Velit delectus porro, et, rem eum id debitis eius est, vitae culpa enim facere!
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quod aliquam fugiat officia quis dolorum dolorem cupiditate dolore? Aperiam sunt officiis quod, sequi praesentium quae reiciendis nihil. Nulla, veniam aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corporis ab neque id eveniet consequatur dolor. Velit delectus porro, et, rem eum id debitis eius est, vitae culpa enim facere!
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quod aliquam fugiat officia quis dolorum dolorem cupiditate dolore? Aperiam sunt officiis quod, sequi praesentium quae reiciendis nihil. Nulla, veniam aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corporis ab neque id eveniet consequatur dolor. Velit delectus porro, et, rem eum id debitis eius est, vitae culpa enim facere!
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quod aliquam fugiat officia quis dolorum dolorem cupiditate dolore? Aperiam sunt officiis quod, sequi praesentium quae reiciendis nihil. Nulla, veniam aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corporis ab neque id eveniet consequatur dolor. Velit delectus porro, et, rem eum id debitis eius est, vitae culpa enim facere!
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quod aliquam fugiat officia quis dolorum dolorem cupiditate dolore? Aperiam sunt officiis quod, sequi praesentium quae reiciendis nihil. Nulla, veniam aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corporis ab neque id eveniet consequatur dolor. Velit delectus porro, et, rem eum id debitis eius est, vitae culpa enim facere!
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quod aliquam fugiat officia quis dolorum dolorem cupiditate dolore? Aperiam sunt officiis quod, sequi praesentium quae reiciendis nihil. Nulla, veniam aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corporis ab neque id eveniet consequatur dolor. Velit delectus porro, et, rem eum id debitis eius est, vitae culpa enim facere!
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quod aliquam fugiat officia quis dolorum dolorem cupiditate dolore? Aperiam sunt officiis quod, sequi praesentium quae reiciendis nihil. Nulla, veniam aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corporis ab neque id eveniet consequatur dolor. Velit delectus porro, et, rem eum id debitis eius est, vitae culpa enim facere!
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quod aliquam fugiat officia quis dolorum dolorem cupiditate dolore? Aperiam sunt officiis quod, sequi praesentium quae reiciendis nihil. Nulla, veniam aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corporis ab neque id eveniet consequatur dolor. Velit delectus porro, et, rem eum id debitis eius est, vitae culpa enim facere!
+    </p>
+
 
 </body>
 </html>
