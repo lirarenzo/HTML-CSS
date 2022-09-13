@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de iFrame</title>
+    <style>
+        iframe{
+            width: 75vw;
+            height: 70vh;
+            display: block; /*tem qu ter porque é um inline*/
+            margin: auto;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Testando o iFrame
+    </h1>
+    <p>
+        Acessando o <em>site</em> do curso em vídeo para aprender a programar.
+    </p>
+    <!--Tamanho padrao doiFrame 300x150px-->
+    <iframe src="https://www.cursoemvideo.com" frameborder="1" scrolling="yes"></iframe>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi tempora doloremque unde incidunt. Officia cum voluptatum, corporis suscipit magni doloremque perferendis, vitae aliquid modi tenetur, nostrum assumenda laboriosam dolorem a.
+    </p>
+    <iframe src="../EXERC 023 Tabelas/desafioTbl.html" frameborder="1"></iframe>
+    <hr>
+    <h1>Links e frames internos do site</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, sed voluptates laudantium doloribus cumque laborum officiis necessitatibus architecto nobis consectetur voluptatum? Numquam rerum quis quia aut, omnis perferendis consequatur autem.
+    </p>
+    <ul>
+        <!--Interacoes do iframe com loniks internos precisa usar a tag NAME-->
+        <li><a href="https://www.cursoemvideo.com" target="telaInterna">Pag 01</a></li>
+        <li><a href="https://www.google.com" target="telaInterna">Pag 02</a></li>
+        <li><a href="../EXERC 023 Tabelas/desafioTbl.html" target="telaInterna">Pag 03</a></li>
+        <li><a href="../EXERC 023 Tabelas/index.html" target="telaInterna">Pag 04</a></li>
+
+    </ul>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure rerum, nobis suscipit nostrum excepturi debitis sapiente, maxime sint voluptatum rem eum at eveniet quaerat? Nesciunt nobis pariatur error architecto qui? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quisquam soluta eum voluptatibus. Quasi natus vero voluptas magni? Quisquam, delectus! Facilis dolores at eligendi nostrum nesciunt perferendis sint cum incidunt.
+    </p>
+    <!--Interacoes do iframe com loniks internos precisa usar a tag NAME-->
+    <iframe src="" frameborder="1" name="telaInterna">
+        <p>
+            <em>Infelizmente seu navegador não é compatível!</em>
+        </p>
+    </iframe>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque quaerat illo, ratione laboriosam fuga at laborum ipsam consectetur mollitia distinctio facere sequi ducimus in est suscipit. Adipisci, maiores alias? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatibus nobis dolore numquam, consequuntur sint autem, quae, ex architecto unde nam voluptas iste temporibus. Assumenda, doloremque. Repudiandae similique culpa omnis?
+    </p>
+</body>
+</html>
