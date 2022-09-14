@@ -10,17 +10,22 @@
             margin: 0;
             padding: 0;
         }
-        .container{
-            background-image: url('../images/tela-youtube.png');
+        main{
             width: 100vw;
             height: 100vh;
-            background-size: contain;
-            background-position: top;
-            background-repeat: no-repeat;
+        }
+        .container{
+            background-image: url('../images/tela-youtube.png');
+            width: auto;
+            height: 100vh;
+            background-size: cover;
+            background-attachment: scroll;
         }
     </style>
 </head>
 <body>
-    <div class="container"></div>
+    <main>
+        <div class="container"></div>
+    </main>
 </body>
 </html>
