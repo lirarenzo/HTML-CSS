@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <main>
+        <h1>Formulários</h1>
+        <!--
+            action = envia os dados p database
+            autocomplete = ON ou OFF (autoexplicativo)
+        -->
+        <form action="cadastro.php" autocomplete="on" method="post">
+            <p>
+                <!--FOR para relacionar a LABEL com o INPUT via ID-->
+                <label for="idNome">Nome:</label>
+                <input type="text" name="nmNome" id="idNome">
+            </p>
+            <p>
+                 <!--FOR para relacionar a LABEL com o INPUT via ID-->
+                <label for="idSobrenome">Sobrenome:</label>
+                <input type="text" name="nmSobrenome" id="idSobrenome">
+            </p>
+            <p>
+                <input type="submit" value="enviar">
+            </p>
+        </form>
+    </main>
+</body>
+</html>
+<!--
+    Métodos p envio de formulários:
+    GET - até 3MB
+    POST - dados sensíveis, dados > 3MB, envio de arquivos
+-->

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Mais sobre formulários</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+                <label for="idUsuario">Usuário:</label>
+                <input type="text" name="nmUsuario" id="idUsuario" size="10" required minlength="4" maxlength="6" placeholder="user" autocomplete="username">
+            </div>
+            <div>
+                <label for="idSenha">Senha:</label>
+                <input type="password" name="nmSenha" id="idSenha" required minlength="4" size="10" placeholder="password" autocomplete="current-password">
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    <!-- Formulário 2 para estudo de checkbox e radio button-->
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi quas quo ad praesentium cum, ducimus repellat non molestias rerum suscipit dicta odit maiores ullam. Laboriosam autem maiores voluptatem repellat soluta.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio dolorem, quibusdam ad blanditiis facilis optio suscipit veniam debitis, minus atque quam libero, magnam quasi consectetur mollitia expedita reprehenderit possimus ex.
+    </p>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>
+                Esportes favoritos (Ckeckbox)
+            </legend>
+            <p>
+                <input type="checkbox" name="nmFut" id="idFut"><label for="idFut">Futebol</label><br>
+                <input type="checkbox" name="nmVol" id="idVol"><label for="idVol">Vôlei</label><br>
+                <input type="checkbox" name="nmNat" id="idNat"><label for="idNat">Natação</label><br>
+                <input type="checkbox" name="nmCor" id="idCor"><label for="idCor">Corrida</label><br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Sexo (Radio Button)
+            </legend>
+            <!--IMPORTANTE: no Radio Button o NAME DEVE SER O MESMO-->
+            <input type="radio" name="nmSex" id="idSexMas" value="Masc"><label for="idSexMas">Masculino</label><br>
+            <input type="radio" name="nmSex" id="idSexFem" value="Fem"><label for="idSexFem">Feminino</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>
