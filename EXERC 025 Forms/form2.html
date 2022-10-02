@@ -57,6 +57,50 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
-
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius inventore deserunt quidem neque iusto velit optio sint facilis eos accusamus esse earum nihil deleniti, dolor, delectus, excepturi sit numquam.
+    </p>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>
+                TAG Select e Data List
+            </legend>
+            <label for="idEst">Estado</label>
+            <select name="nmEst" id="idEst">
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Região Sudeste">
+                    <!--o valor enviado é o VALUE-->
+                    <option value="MG">MG</option>
+                    <option value="RJ">RJ</option>
+                    <option value="SP">SP</option>
+                </optgroup>
+                <optgroup label="Região Norte">
+                    <option value="AM">Amazônas</option>
+                    <option value="PA">Pará</option>
+                    <option value="AC">Acre</option>
+                </optgroup>
+            </select>
+            <label for="idProf">Profissão</label>
+            <!--Cria um INPUT TEXT e relaciona com a lista pelo atributo list-->
+            <!--Permite adicionar valores nao listados-->
+            <input type="text" name="nmProf" id="idProf" list="lstProf">
+            <datalist id="lstProf">
+                <!--Aqui nao põe o VALUE-->
+                <option>Contador</option>
+                <option>Militar</option>
+                <option>Médico</option>
+            </datalist>
+            <br>
+            <label for="idMsg">Mensagem</label>
+            <br>
+            <textarea name="nmMsg" id="idMsg" cols="30" rows="10"></textarea>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+    
 </body>
 </html>
