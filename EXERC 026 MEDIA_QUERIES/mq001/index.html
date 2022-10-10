@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hambúrguer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Meu exemplo de menu hamburguinho
+        </h1>
+        <div class="icon" onclick="clickHamburger()">
+            <img id="iconBurger" src="menu_FILL0_wght400_GRAD0_opsz48.svg" alt="menu">
+        </div>
+        <nav id="menuPcp">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Locais</a></li>
+                <li><a href="#">História</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>
+                Menu hamburguinho
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ullam inventore accusamus, rem ducimus nemo iste placeat odio? Saepe totam quisquam praesentium eum sed quas qui commodi esse! Non, a? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, eveniet dolor? Enim nulla provident consequuntur autem ad! Necessitatibus, veniam quos. Illum ratione et laudantium mollitia sunt repudiandae voluptas. Eveniet, veritatis.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos et architecto est asperiores, dolor voluptas enim sint ex expedita, voluptatem, minus voluptates odit natus inventore nam explicabo deserunt molestias modi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eum qui, distinctio tempore adipisci quod nam, dolore laboriosam magni dolorum facilis sunt ducimus deleniti enim sint minus voluptatibus dicta delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nihil libero blanditiis ducimus vitae repellendus iusto et, consequuntur vel ad facere placeat, in suscipit fugit aliquid consequatur aspernatur. Natus, dolorum.
+            </p>
+        </article>
+    </main>
+    <script>
+        function clickHamburger(){
+            if (menuPcp.style.display == 'block'){
+                menuPcp.style.display = 'none'
+            }else{
+                menuPcp.style.display = 'block'
+            };
+        }
+    </script>
+</body>
+</html>
