@@ -7,7 +7,7 @@
     <title>Menu Hambúrguer</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>
             Meu exemplo de menu hamburguinho
@@ -39,6 +39,15 @@
         </article>
     </main>
     <script>
+        /*Para evitar o sumiço do MENU qdo a tela eh aumentada*/
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                menuPcp.style.display = 'block'
+            }else{
+                menuPcp.style.display = 'none'
+            }
+        }
+
         function clickHamburger(){
             if (menuPcp.style.display == 'block'){
                 menuPcp.style.display = 'none'
